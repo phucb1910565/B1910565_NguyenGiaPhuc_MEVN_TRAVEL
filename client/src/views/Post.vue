@@ -7,7 +7,7 @@
                     <v-card-actions class="pb-0">
                         <v-row class="mt-1 mx-1">
                             <v-col sm="2">
-                                <v-btn small outlined color="primary">
+                                <v-btn small outlined color="success">
                                     {{ post.category }}
                                 </v-btn>
                             </v-col>
@@ -18,11 +18,11 @@
                         </v-row>
                     </v-card-actions>
                     <v-card-subtitle class="headline">
-                        <h3>{{ post.title }}</h3>
+                        <h3 class="green--text">{{ post.title }}</h3>
                     </v-card-subtitle>
-                    <v-card-text class="grey--text">
+                    <v-card-text class="black--text">
                         <p>{{ post.content }}</p>
-                        <p>{{ post.created }}</p>
+                        <!-- <p>{{ post.created }}</p> -->
                     </v-card-text>
                 </v-card>
             </v-col>
