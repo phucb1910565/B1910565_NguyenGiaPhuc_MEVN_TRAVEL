@@ -4,10 +4,10 @@
     {{ this.$route.params.message }}
     </v-alert>
     <v-row no-gutters>
-      <v-col sm="4" class="pa-3" v-for="post in posts" :key="post._id">
+      <v-col sm="3" class="pa-1" v-for="post in posts" :key="post._id">
         <v-card class="pa-1" :to="{name: 'post', params: {id: post._id}}">
           <v-img height="250" :src="`/${post.image}`"></v-img>
-          <v-btn class="ml-4 mt-3" small outlined color="indigo">
+          <v-btn  class="ml-4 mt-3"  small outlined color="green">
             {{ post.category }}
           </v-btn>
           <v-card-title class="headline">
