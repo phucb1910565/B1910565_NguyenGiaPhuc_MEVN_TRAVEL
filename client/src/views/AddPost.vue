@@ -1,9 +1,9 @@
 <template>
     <v-container>
         <v-row no-gutters>
-            <v-col sm="10" class="mx-auto">
+            <v-col style="padding-top: 42px" sm="5" class="mx-auto">
                 <v-card class="pa-5">
-                    <v-card-title>Thêm bài viết</v-card-title>
+                    <v-card-title style="color: #6ada4f; margin-left: 140px">Thêm bài viết</v-card-title>
                     <v-divider></v-divider>
                     <v-form ref="form" @submit.preven="submitForm" class="pa-5" enctype="multipart/form-data">
                         <v-text-field label="Tiêu đề" v-model="post.title" prepend-icon="mdi-note" :rules="rules">
@@ -18,7 +18,7 @@
                         <v-file-input @change="selectFile" :rules="rules" show-size counter multiple
                             label="Chọn ảnh"></v-file-input>
 
-                        <v-btn type="submit" class="mt-3" color="primary">Thêm bài viết</v-btn>
+                        <v-btn type="submit" class="mt-3" color="green" style="color: white">Thêm bài viết</v-btn>
 
                     </v-form>
                 </v-card>
