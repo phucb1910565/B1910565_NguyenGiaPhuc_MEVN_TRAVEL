@@ -3,7 +3,7 @@
         <v-row no-gutters>
             <v-col sm="10" class="mx-auto">
                 <v-card class="pa-5">
-                    <v-card-title>Edit This Post</v-card-title>
+                    <v-card-title>Sửa bài viết</v-card-title>
                     <v-divider></v-divider>
                     <v-form ref="form" @submit.preven="updateForm" class="pa-5" enctype="multipart/form-data">
                         <v-text-field label="Title" v-model="post.title" prepend-icon="mdi-note" :rules="rules">
